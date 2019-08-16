@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@font-face { font-family: 'Myriad Pro'; src: url("../fonts/MyriadPro-Regular.eot"); src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Myriad Pro'; src: url("../fonts/MyriadPro-Black.eot"); src: url("../fonts/MyriadPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Black.woff2") format("woff2"), url("../fonts/MyriadPro-Black.woff") format("woff"), url("../fonts/MyriadPro-Black.ttf") format("truetype"), url("../fonts/MyriadPro-Black.svg#MyriadPro-Black") format("svg"); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Tw Cen MT'; src: url("../fonts/TwCenMT-Bold.eot"); src: url("../fonts/TwCenMT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TwCenMT-Bold.woff2") format("woff2"), url("../fonts/TwCenMT-Bold.woff") format("woff"), url("../fonts/TwCenMT-Bold.ttf") format("truetype"), url("../fonts/TwCenMT-Bold.svg#TwCenMT-Bold") format("svg"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Tw Cen MT'; src: url("../fonts/TwCenMT-Regular.eot"); src: url("../fonts/TwCenMT-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TwCenMT-Regular.woff2") format("woff2"), url("../fonts/TwCenMT-Regular.woff") format("woff"), url("../fonts/TwCenMT-Regular.ttf") format("truetype"), url("../fonts/TwCenMT-Regular.svg#TwCenMT-Regular") format("svg"); font-weight: normal; font-style: normal; }
+#agenda .container .title-agenda h2, #agenda .container .col-events .box-events p, #agenda .container .col-events .box-events .box-events-data a, #agenda .container .col-events .box-events .box-events-data a i, #agenda .container .col-events .box-events .btn-events { color: #444444; }
+
+*, body, html, p { font-family: 'Myriad Pro'; font-weight: normal; }
+
+#header .logotipo, #header .col-menu .menu-header, #header .col-menu .menu-header ul, #banner, #banner .conteudo-banner, #quem_somos, #quem_somos .container .col-quemsomos, #onde_estamos, #onde_estamos .col-left, #onde_estamos .col-right, .agenda-iframe, #cowork, #economia_criativa_tabs .container .tabs-container .tab-title .tab-hover, #economia_criativa_tabs .container .tabs-container .tab-title .tab-content-title, .border-hover, #projetos, #projetos .title-projetos, .container-card, #agenda, #agenda .container .title-agenda, #agenda .container .col-events, #agenda .container .col-events .box-events .box-events-data, #newsletter, #newsletter .title-newsletter, #newsletter .col-form, #footer, #footer .container .col-footer, #footer .container .col-footer .logotipos-footer, #footer .container .bloco-info { width: 100%; float: left; position: relative; }
+
+.container, #cowork .container .col-left .title, #cowork .container .col-left .title .left-title, #cowork .container .col-left .title .left-title .icone, #cowork .container .col-left .content, #economia_criativa, #economia_criativa_tabs .title-economia-criativa-tabs { width: 90%; max-width: 1170px; position: relative; margin: 0 auto; overflow: hidden; }
+
+#header, #header .logotipo, #header .col-menu, #header .col-menu .menu-header, #header .col-menu .menu-header ul li, #banner .conteudo-banner, #banner .conteudo-banner .btn-banner, #quem_somos .container, #quem_somos .container .col-quemsomos, #onde_estamos .col-right .btn-agendar, #cowork .container .col-left .title, #cowork .container .col-right a .btn-coworking, #economia_criativa_tabs, #economia_criativa_tabs .title-economia-criativa-tabs, #economia_criativa_tabs .container .tabs-container, #economia_criativa_tabs .container .tabs-container .tab-title, #economia_criativa_tabs .tab-content, #projetos, #projetos .title-projetos, .container-card, .box-back, #agenda, #agenda .container .title-agenda, #agenda .container .col-events, #agenda .container .col-events .box-events .box-events-data, #agenda .container .col-events .box-events .btn-events, #newsletter, #newsletter .title-newsletter, #newsletter .col-form, #newsletter .col-form input[type=email], #newsletter .col-form input[type=submit], #footer, #footer .container .col-footer, #footer .container .col-footer .logotipos-footer, #footer .container .col-footer .social-footer, #footer .container .bloco-info { display: flex; }
+
+#header .col-menu .menu-header ul li, #economia_criativa_tabs, #economia_criativa_tabs .container .tabs-container .tab-title, #economia_criativa_tabs .tab-content, #projetos, #agenda, #newsletter .col-form { flex-direction: column; }
+
+#header, #quem_somos .container, #cowork .container, .container-card, #agenda .container .col-events { justify-content: space-between; }
+
+#header .col-menu .menu-header ul li, #quem_somos .container .col-quemsomos, #agenda, #newsletter { text-align: center; }
+
+#header, #header .logotipo, #header .col-menu .menu-header, #quem_somos .container .col-quemsomos, #cowork .container .col-left .title, #projetos, #agenda, #agenda .container .col-events .box-events .box-events-data, #agenda .container .col-events .box-events .btn-events, #newsletter, #newsletter .col-form, #newsletter .col-form input[type=email], #footer, #footer .container .col-footer, #footer .container .col-footer .logotipos-footer, #footer .container .col-footer .social-footer { align-items: center; }
+
+#banner .conteudo-banner, #economia_criativa_tabs .title-economia-criativa-tabs, #economia_criativa_tabs .tab-content, #projetos .title-projetos, #agenda .container .col-events .box-events .btn-events, #newsletter .title-newsletter, #newsletter .col-form input[type=email], #footer .container .col-footer { justify-content: center; }
+
+#banner .conteudo-banner .btn-banner, #onde_estamos .col-right .btn-agendar, #cowork .container .col-right a .btn-coworking, #economia_criativa_tabs, .box-back, #agenda .container .title-agenda, #newsletter .col-form input[type=submit], #footer .container .bloco-info { justify-content: center; align-items: center; text-align: center; }
+
+* { padding: 0; margin: 0; }
+
+body, html { margin: 0; padding: 0; }
+
+p { font-size: 16px; font-weight: 500; }
+
+a, a:hover { text-decoration: none; }
+
+#header { background: #fff; height: 81px; position: fixed; width: 100%; z-index: 999999; -webkit-box-shadow: 0px 10px 33px -8px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0px 10px 33px -8px rgba(0, 0, 0, 0.17); box-shadow: 0px 10px 33px -8px rgba(0, 0, 0, 0.17); }
+#header .logotipo { width: 20%; height: 81px; }
+#header .col-menu { float: right; position: relative; height: 81px; }
+#header .col-menu .abrir-nav { display: none; transition: 1s all; width: 30px; height: 30px; margin-top: 33px; margin-right: 5%; float: right; right: 0; flex-direction: column; justify-content: space-around; padding: 5px; }
+#header .col-menu .abrir-nav-hamburguer { transform: rotate(90deg); }
+#header .col-menu .mm_line { display: block; width: 30px; height: 2px; transition: .5s ease-in-out; background: #662483; position: relative; }
+#header .col-menu .mm_line:before, #header .col-menu .mm_line:after { background: #662483; content: ''; display: block; width: 100%; height: 100%; position: absolute; transition: .5s ease-in-out; }
+#header .col-menu .mm_line:before { top: -10px; }
+#header .col-menu .mm_line:after { bottom: -10px; }
+#header .col-menu .abrir-nav-hamburguer .mm_line { transform: rotate(45deg); }
+#header .col-menu .abrir-nav-hamburguer .mm_line:before { transform: rotate(90deg); top: 0; }
+#header .col-menu .abrir-nav-hamburguer .mm_line:after { transform: rotate(90deg); bottom: 0; }
+#header .col-menu .menu-header ul { margin: 0; padding: 0; list-style: none; }
+#header .col-menu .menu-header ul li { float: left; position: relative; padding: 0 30px; }
+#header .col-menu .menu-header ul li a { color: #474747 !important; font-size: 14px; font-weight: 300; width: 100%; cursor: pointer; text-decoration: none; text-transform: uppercase; }
+#header .col-menu .menu-header ul li :hover a { color: #662483; }
+
+.menu-transition { width: 100%; transition: 1s all; }
+
+/*BANNER*/
+#banner { height: 701px; margin-top: 81px; }
+#banner .conteudo-banner { flex-direction: column !important; height: 701px; }
+#banner .conteudo-banner img { width: 44px; height: 46px; margin-bottom: 46px; }
+#banner .conteudo-banner h2 { font-size: 66px; color: #fff; line-height: 60px; font-family: 'Tw Cen MT' !important; font-weight: bold; }
+#banner .conteudo-banner h2 span { font-size: 66px; font-weight: 300; }
+#banner .conteudo-banner h3 { font-size: 66px; color: #fff; line-height: 60px; font-family: 'Tw Cen MT'; font-weight: normal; }
+#banner .conteudo-banner .btn-banner { margin-top: 35px; width: 250px; height: 38px; border-radius: 25px; color: #fff; cursor: pointer; text-transform: uppercase; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f460a9+0,2f0497+100 */ background: #f460a9; /* Old browsers */ background: -moz-linear-gradient(left, #f460a9 0%, #2f0497 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #f460a9 0%, #2f0497 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #f460a9 0%, #2f0497 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f460a9', endColorstr='#2f0497',GradientType=1 ); /* IE6-9 */ }
+
+/*================================
+QUEM SOMOS
+===============*/
+#quem_somos { height: 325px; padding: 166px 0 0; background: #662483; }
+#quem_somos .container .col-quemsomos { flex-direction: column; width: 30%; }
+#quem_somos .container .col-quemsomos h2 { color: #fff; font-size: 35px; font-weight: 700; margin-bottom: 32px; font-family: "Myriad Pro", Myriad !important; }
+#quem_somos .container .col-quemsomos h2 span { color: #f37f3d; }
+#quem_somos .container .col-quemsomos p { color: #fff; font-weight: 300; }
+
+/*ONDE ESTAMOS*/
+#onde_estamos { padding: 125px 0; }
+#onde_estamos .col-left, #onde_estamos .col-right { width: 48%; height: 485px; }
+#onde_estamos .col-right { float: right; }
+#onde_estamos .col-right h2 { font-size: 50px; font-weight: bolder; color: #444444; }
+#onde_estamos .col-right p { font-size: 16px; color: #b3b4d4; font-weight: 300; line-height: 33px; }
+#onde_estamos .col-right p span { color: #7a3e97; }
+#onde_estamos .col-right .btn-agendar { margin-top: 45px; width: 250px; height: 38px; border-radius: 25px; color: #fff; cursor: pointer; text-transform: uppercase; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f460a9+0,2f0497+100 */ background: #f460a9; /* Old browsers */ background: -moz-linear-gradient(left, #f460a9 0%, #2f0497 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #f460a9 0%, #2f0497 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #f460a9 0%, #2f0497 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f460a9', endColorstr='#2f0497',GradientType=1 ); /* IE6-9 */ }
+
+.calendar-form { height: 0; transition: 2s all; }
+
+.active-calendar { height: auto; transition: 2s all; }
+
+.agenda-iframe { height: 800px; }
+.agenda-iframe iframe { width: 100%; height: 100%; }
+.agenda-iframe iframe body { background: transparent; }
+
+/*===============
+COWORK
+=========*/
+#cowork .container { display: flex; padding: 160px 0 125px; }
+#cowork .container .col-left { height: auto; width: 45%; }
+#cowork .container .col-left .title { margin-bottom: 40px; }
+#cowork .container .col-left .title .left-title { width: 50%; margin-right: 5%; }
+#cowork .container .col-left .title .left-title h2 { color: #fff; font-size: 50px; line-height: 50px; }
+#cowork .container .col-left .title .left-title .icone { width: 20%; margin-top: -3px; }
+#cowork .container .col-left .content p { color: #fff; font-weight: 300; line-height: 30px; }
+#cowork .container .col-right { height: auto; padding-top: 105px; width: 45%; float: right; }
+#cowork .container .col-right p { color: #fff; font-weight: bolder; }
+#cowork .container .col-right a .btn-coworking { margin-top: 35px; width: 250px; height: 38px; border-radius: 25px; color: #fff; cursor: pointer; text-transform: uppercase; background: #f460a9; /* Old browsers */ background: -moz-linear-gradient(left, #f460a9 0%, #2f0497 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #f460a9 0%, #2f0497 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #f460a9 0%, #2f0497 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f460a9', endColorstr='#2f0497',GradientType=1 ); /* IE6-9 */ }
+
+/*ECONOMIA CRIATIVA*/
+#economia_criativa { height: 580px; padding: 164px 0; }
+#economia_criativa .col-left { width: 38%; margin-left: 7%; }
+#economia_criativa .col-left h2 { font-size: 40px; font-weight: bolder; color: #444444; line-height: 45px; margin-bottom: 10px; }
+#economia_criativa .col-left h2 span { color: #7a3e97; }
+#economia_criativa .col-left p { color: #9899c5; font-size: 16px; font-weight: 300; line-height: 33px; }
+#economia_criativa .col-left p span { color: #7a3e97; }
+#economia_criativa .col-right { padding: 0; width: 38%; margin-right: 5%; float: right; }
+#economia_criativa .col-right h2 { font-size: 40px; font-weight: bolder; color: #444444; line-height: 45px; margin-bottom: 10px; }
+#economia_criativa .col-right h2 span { color: #7a3e97; }
+#economia_criativa .col-right p { color: #9899c5; font-size: 16px; font-weight: 300; line-height: 33px; }
+
+#economia_criativa_tabs { height: auto; padding: 0 0 164px 0; }
+#economia_criativa_tabs h3 { color: #c4c4c4; font-size: 16px; }
+#economia_criativa_tabs .title-economia-criativa-tabs { margin: 28px 0; text-align: center; }
+#economia_criativa_tabs .title-economia-criativa-tabs h2 { font-size: 50px; color: #444444; }
+#economia_criativa_tabs .title-economia-criativa-tabs span { color: #7a3e97; }
+#economia_criativa_tabs .container .tabs-container { width: 460px; margin: 0 auto; position: relative; justify-content: space-around; }
+#economia_criativa_tabs .container .tabs-container .tab-title { text-align: center; height: 50px; align-items: center; margin-right: 25px; margin-left: 25px; cursor: pointer; }
+#economia_criativa_tabs .container .tabs-container .tab-title .tab-hover { height: 5px; }
+#economia_criativa_tabs .container .tabs-container .tab-title .tab-content-title { font-size: 22px; color: #1f2047; margin-top: 9px; }
+#economia_criativa_tabs .tab-content { width: 70%; margin: 18px auto; }
+#economia_criativa_tabs .tab-content h4 { text-transform: uppercase; color: #662483; font-size: 16px; font-weight: bolder; margin-bottom: 16px; margin-top: 16px; }
+#economia_criativa_tabs .tab-content p { color: #9fa0c9; font-size: 16px; line-height: 26px; font-weight: 300; }
+#economia_criativa_tabs .tab-content-2, #economia_criativa_tabs .tab-content-3, #economia_criativa_tabs .tab-content-4 { display: none; }
+
+.border-hover { width: 0; height: 5px; transition: 1s all; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#340b9a+0,f861a9+100 */ background: #340b9a; /* Old browsers */ background: -moz-linear-gradient(left, #340b9a 0%, #f861a9 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #340b9a 0%, #f861a9 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #340b9a 0%, #f861a9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#340b9a', endColorstr='#f861a9',GradientType=1 ); /* IE6-9 */ }
+
+.active-border-hover { transition: 1s all; width: 100%; }
+
+/*=========================
+Projetos
+=============*/
+#projetos { padding: 83px 0; text-align: center; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7f3e98+0,6f1db4+100 */ background: #7f3e98; /* Old browsers */ background: -moz-linear-gradient(top, #7f3e98 0%, #6f1db4 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #7f3e98 0%, #6f1db4 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #7f3e98 0%, #6f1db4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f3e98', endColorstr='#6f1db4',GradientType=0 ); /* IE6-9 */ }
+#projetos h3 { color: #fff; font-size: 16px; font-weight: bolder; }
+#projetos .title-projetos { margin: 28px 0; }
+#projetos .title-projetos h2 { font-size: 50px; color: #fff; }
+#projetos .title-projetos span { color: #f37f3d; }
+
+.card { width: 358px; height: 358px; display: flex; flex-direction: column; position: relative; }
+
+/* container com a perspectiva */
+.flip-container { perspective: 1000; }
+
+/* feito com o hover */
+.flip-container:hover .flipper, .flip-container.hover .flipper { transform: rotateY(180deg); }
+
+.flip-container, .front, .back { width: 358px; height: 358px; display: flex; flex-direction: column; position: relative; }
+
+/* velocidade da animação */
+.flipper { transition: 1s; transform-style: preserve-3d; position: relative; }
+
+/* esconder parte de trás do painel durante a troca */
+.front, .back { backface-visibility: hidden; position: absolute; top: 0; left: 0; }
+
+/* coloca o painel frontal acima */
+.front { z-index: 2; /* for firefox 31 */ transform: rotateY(0deg); }
+
+.front img { width: 100%; height: auto; }
+
+/* painel de volta, inicialmente escondido */
+.back { transform: rotateY(180deg); }
+
+.box { width: 100%; height: 100%; font-size: 15px; cursor: pointer; }
+
+.box-back { background: #f37f3d; padding: 0 23px; width: 312px; height: 358px; }
+
+.box-back p { color: #fdefff; font-size: 20px; font-weight: 300; line-height: 22px; }
+
+/*====================
+Agenda
+=============*/
+#agenda { padding: 57px 0 0; }
+#agenda .container span { font-size: 22px; color: #c4c4c4; }
+#agenda .container .title-agenda { margin: 28px 0; }
+#agenda .container .title-agenda h2 { font-size: 50px; }
+#agenda .container .col-events { flex-wrap: wrap; }
+#agenda .container .col-events .box-events { width: 27%; background: #fff; float: left; padding: 16px 16px 0; -webkit-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.07); -moz-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.07); box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.07); overflow: hidden; margin-bottom: 5%; }
+#agenda .container .col-events .box-events img { width: 100%; height: auto; }
+#agenda .container .col-events .box-events p { font-size: 16px; text-align: left; margin: 20px 0; }
+#agenda .container .col-events .box-events .box-events-data { margin: 18px 0; }
+#agenda .container .col-events .box-events .box-events-data a { font-size: 16px; font-weight: 300; margin: auto auto auto 5px; }
+#agenda .container .col-events .box-events .box-events-data a i { font-size: 25px; }
+#agenda .container .col-events .box-events .btn-events { border: 1px solid #444444; background: transparent; border-radius: 25px; width: 133px; height: 38px; margin: 0 auto; text-transform: uppercase; }
+
+#newsletter { background: #f5f5f5; padding: 0 0 57px 0; }
+#newsletter h2 { color: #c5c5c5; font-size: 22px; font-weight: bolder; }
+#newsletter .title-newsletter { margin: 28px 0; }
+#newsletter .title-newsletter h2 { font-size: 50px; color: #122f3f; }
+#newsletter .title-newsletter span { color: #662483; }
+#newsletter h4 { font-size: 22px; color: #9899c5; font-weight: 300; }
+#newsletter .col-form input[type=email] { width: 527px; height: 50px; border-radius: 25px; background: #e7e5e5; color: #9698bd; font-size: 16px; border: none; text-align: center; margin: 50px auto; }
+#newsletter .col-form input[type=submit] { width: 130px; height: 38px; border-radius: 25px; color: #fff; font-size: 12px; font-weight: bolder; text-transform: uppercase; border: none; margin: 0 auto; background: #f360a9; /* Old browsers */ background: -moz-linear-gradient(left, #f360a9 1%, #300497 99%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #f360a9 1%, #300497 99%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #f360a9 1%, #300497 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f360a9', endColorstr='#300497',GradientType=1 ); /* IE6-9 */ }
+#newsletter .col-form ::-webkit-input-placeholder, #newsletter .col-form :-moz-placeholder, #newsletter .col-form ::-moz-placeholder, #newsletter .col-form :-ms-input-placeholder { color: #9698bd; }
+
+#footer { height: 449px; background: #32154c; }
+#footer .container .col-footer .logotipos-footer { width: auto; justify-content: space-around; }
+#footer .container .col-footer .logotipos-footer img { margin: 0 5%; }
+#footer .container .col-footer .social-footer { float: right; font-size: 24px; margin-left: 5%; }
+#footer .container .col-footer .social-footer a, #footer .container .col-footer .social-footer a i { color: #795192; margin: 0 5px; }
+#footer .container .bloco-info p { color: #795192; font-weight: 300; font-size: 16px; }
+
+/*quemsomos*/
+#projetos.mobile-site, #projetos > .mobile-site, .mobile-site { display: none !important; }
+
+.social-menu { display: none; width: 90%; float: left; position: relative; margin: 50px 5%; }
+
+.social-menu.active-social > a i { color: #9aa9c0; margin-right: 14px; font-size: 26px; }
+
+.active-social { display: block !important; }
+
+@media (max-width: 2000px) { .card { width: 30%; }
+  .flip-container, .front, .back { width: 100%; height: -webkit-fill-available; }
+  .box-back { padding: 0 5%; width: 90%; } }
+@media (max-width: 1170px) { #onde_estamos > div:nth-child(3) > img { width: 100%; float: left; position: relative; } }
+@media (max-width: 1100px) { #header .container .logotipo { width: auto; }
+  #header .container .col-menu ul li { width: auto; padding: 0 2.5%; }
+  #onde_estamos .container .col-left img { width: 100%; height: auto; }
+  #cowork .container .col-left .title .left-title { width: auto; }
+  #economia_criativa { height: auto; padding: 5% 0; }
+  #economia_criativa .container .col-left, #economia_criativa .container .col-right { width: 43%; padding-top: 0; }
+  #economia_criativa .container .col-left { margin-left: 0; }
+  #economia_criativa .container .col-right { margin-right: 0; }
+  .box { height: 358px; }
+  .box-back p { font-size: 15px; }
+  .card { width: 30%; height: auto; } }
+@media (max-width: 900px) { #header .container .logotipo { width: 15%; }
+  #header .container .logotipo img { width: 100%; }
+  #header .container .col-menu { width: 80%; }
+  #header .container .col-menu ul li { width: auto; padding: 0 1.5%; }
+  #quem_somos { height: auto; padding: 10% 0; }
+  #quem_somos .container .col-quemsomos { width: 32%; }
+  #agenda .container .col-events .box-events { width: 40%; padding: 3%; }
+  #agenda .container .col-events .box-events img { width: auto; height: auto; } }
+@media (max-width: 800px) { #header .container { width: 100%; max-width: 100%; overflow: unset; }
+  #header .container .logotipo { left: 4%; z-index: 99999 !important; margin: 0 auto; position: absolute; width: 25%; cursor: pointer; }
+  #header .container .logotipo img { width: auto; }
+  #header .container .col-menu { width: 100%; float: right; position: relative; margin-top: 0; display: block; background: #fff; }
+  #header .container .col-menu .abrir-nav { display: block; }
+  #header .container .col-menu .menu-header { position: absolute; /*top: -800px;*/ left: -1000px; height: 0; background: #fff; margin-top: 80px; height: 100vh; width: 100%; transition: 1s all; flex-direction: column; z-index: -10 !important; }
+  #header .container .col-menu .menu-header ul { width: 90%; margin: 0 5%; }
+  #header .container .col-menu .menu-header ul li { width: 100%; height: 48px; display: flex; align-items: center; text-align: left; border-bottom: 1px solid #9aa9c0; justify-content: center; padding: 0; }
+  #header .container .col-menu .menu-header ul li a { color: #9aa9c0; font-size: 16px; font-weight: 300; padding: 2px 0; }
+  #header .container .col-menu .menu-header ul li :last-child { width: 100%; }
+  /*MENU*/
+  .active-menu { transition: 1s all; left: 0 !important; /*top:-2px !important;*/ height: 100vh !important; }
+  #banner { height: auto; }
+  #banner .container .conteudo-banner { height: auto; padding: 5% 0; width: 100%; float: left; position: relative; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; }
+  #banner .container .conteudo-banner img { margin-bottom: 0; }
+  #banner .container .conteudo-banner h2 { font-size: 50px; font-weight: 700; color: #fff; line-height: 41px; margin: 6% 0; }
+  #banner .container .conteudo-banner h3 { font-size: 41px; line-height: 32px; }
+  #quem_somos { padding: 8% 0; }
+  #quem_somos .container { display: flex; justify-content: center; flex-direction: column; }
+  #quem_somos .container .col-quemsomos { width: 80%; margin: 5% 10%; }
+  #onde_estamos { padding: 0; }
+  #onde_estamos .container { width: 100%; max-width: 100%; }
+  #onde_estamos .container .col-left { width: 100%; max-width: 100%; padding: 0 !important; height: auto; }
+  #onde_estamos .container .col-right { width: 80%; padding: 47px 10%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; }
+  #cowork { height: auto; background-size: cover !important; padding: 34px 0; }
+  #cowork .container { justify-content: center; flex-direction: column; padding: 2% 0; }
+  #cowork .container .col-left, #cowork .container .col-right { width: 80%; padding: 2% 10%; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; }
+  #cowork .container .col-left .title { width: 100%; flex-direction: column; }
+  #cowork .container .col-left .title .left-title { width: 100%; margin: 0; order: 2; }
+  #cowork .container .col-left .title .icone { order: 1; margin: 0 0 30px 0; }
+  #economia_criativa { height: auto; padding: 64px 0 0; }
+  #economia_criativa .container .col-left, #economia_criativa .container .col-right { width: 80%; padding: 2% 10%; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; }
+  #economia_criativa_tabs { background: #f0f0f0; padding: 40px 0; }
+  #economia_criativa_tabs .container h3 { font-size: 22px; }
+  #economia_criativa_tabs .container .title-economia-criativa-tabs { display: flex; justify-content: center; margin: 28px 0 0; flex-direction: column; align-items: center; }
+  #economia_criativa_tabs .container .title-economia-criativa-tabs h2 { margin: 40px 0; }
+  #economia_criativa_tabs .container .tabs-container { width: 35%; flex-direction: column; justify-content: center; text-align: center; margin: 0 32.5%; }
+  #economia_criativa_tabs .container .tabs-container .tab-title { text-align: center; height: 41px; display: flex; align-items: center; margin-right: 25px; margin-left: 25px; flex-direction: column; cursor: pointer; }
+  #projetos .desk, .desk { display: none !important; }
+  #projetos.mobile-site { width: 100%; margin: 0 auto !important; display: flex !important; }
+  .card { width: 100%; height: auto; }
+  .mobile-site { display: flex !important; width: 80%; float: left; position: relative; margin: 1% 10%; flex-direction: column; justify-content: center; align-items: center; }
+  .mobile-site h2 { color: #444444; font-size: 50px; text-align: center; }
+  .mobile-site h2 span { color: #8748a7; }
+  #projetos h3, #projetos.mobile-site h3 { font-size: 22px; }
+  .container-card { justify-content: center; flex-direction: column; align-items: center; }
+  .card { margin: 25px 0; }
+  #agenda { padding: 5% 0; }
+  #agenda .container .title-agenda { margin: 40px 0; }
+  #agenda .container .col-events { justify-content: center; flex-direction: column; flex-wrap: nowrap; }
+  #agenda .container .col-events .box-events { width: 93%; height: auto; -webkit-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.07); -moz-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.07); box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.07); }
+  #agenda .container .col-events .box-events img { width: auto; height: auto; }
+  #newsletter { padding: 0 0 40px; }
+  #newsletter .container .col-form input[type=email] { width: 100%; margin: 37px auto; }
+  #footer { height: auto; padding: 5% 0; }
+  #footer .container .col-footer { flex-direction: column; }
+  #footer .container .col-footer .social-footer { float: right; display: flex; align-items: center; font-size: 24px; margin: 24px 0; }
+  #footer .container .bloco-info { margin: 2% 0 !important; } }
+@media (max-width: 500px) { /* .col-quemsomos {  width: 100%;  margin: 5% 0;  }   #onde_estamos > div:nth-child(3) > img{width: 100%; height: auto;}   #economia_criativa .col-left h2,  .col-right h2,  .title-economia-criativa-tabs h2,  .title-agenda h2,  .title-newsletter h2 {  font-size: 48px;  line-height: 45px;  }*/ }
